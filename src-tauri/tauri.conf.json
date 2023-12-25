@@ -1,0 +1,72 @@
+{
+	"build": {
+		"beforeDevCommand": "pnpm dev",
+		"beforeBuildCommand": "pnpm build",
+		"devPath": "http://localhost:1420",
+		"distDir": "../dist"
+	},
+	"package": {
+		"productName": "Pika-AIO"
+	},
+	"tauri": {
+		"allowlist": {
+			"all": false,
+			"shell": {
+				"all": false,
+				"open": true
+			},
+			"fs": {
+				"all": false,
+				"copyFile": false,
+				"createDir": false,
+				"exists": false,
+				"readDir": false,
+				"readFile": true,
+				"removeDir": false,
+				"removeFile": false,
+				"renameFile": false,
+				"scope": [],
+				"writeFile": true
+			}
+		},
+		"bundle": {
+			"active": true,
+			"targets": "all",
+			"copyright": "MIT",
+			"resources": ["express.js", "package.json"],
+			"identifier": "net.unhazy",
+			"icon": ["icons/icon.ico"],
+			"windows": {
+				"allowDowngrades": true,
+				"certificateThumbprint": null,
+				"digestAlgorithm": null,
+				"nsis": {
+					"installerIcon": "icons/icon.ico",
+					"compression": "lzma",
+					"installMode": "currentUser",
+					"license": "LICENSE.md"
+				},
+				"timestampUrl": null,
+				"tsp": false,
+				"webviewFixedRuntimePath": null,
+				"webviewInstallMode": {
+					"silent": true,
+					"type": "downloadBootstrapper"
+				},
+				"wix": null
+			}
+		},
+		"security": {
+			"csp": null
+		},
+		"windows": [
+			{
+				"fullscreen": false,
+				"resizable": false,
+				"title": "Pika AIO",
+				"width": 1000,
+				"height": 800
+			}
+		]
+	}
+}

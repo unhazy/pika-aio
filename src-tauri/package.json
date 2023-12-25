@@ -1,0 +1,18 @@
+{
+	"name": "express-backend",
+	"version": "1.0.1",
+	"description": "Runs an express server as a background worker to integrate tauri technology with mineflayer.",
+	"main": "express.js",
+	"type": "module",
+	"scripts": {
+		"dev": "cd .. && vite",
+		"build": "cd .. && tsc && vite build"
+	},
+	"author": "@unhazy",
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.18.2",
+		"mineflayer": "^4.14.0",
+		"socket.io": "^4.7.2"
+	}
+}
