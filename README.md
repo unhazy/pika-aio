@@ -118,4 +118,4 @@ Listed below are technologies that power this project.
 [mineflayer-url]: https://github.com/PrismarineJS/mineflayer
 [uuid-url]: https://github.com/uuidjs/uuid
 [vite-tsconfig-paths-url]: https://github.com/aleclarson/vite-tsconfig-paths
-[releases-url]: https://github.com/unhazy
+[releases-url]: https://github.com/unhazy/pika-aio/releases
